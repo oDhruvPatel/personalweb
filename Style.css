@@ -1,0 +1,78 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&family=Open+Sans:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'YY'; /* Replace with the name you want to use */
+    src: url('/fonts/me2.woff2') format('woff2'); /* Update the path */
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+  }
+
+  .YY{
+    font-family: 'YY';
+  }
+
+ body{
+  margin: 0;
+  padding: 0;
+  background: #F0F8FF;
+ }
+
+  
+  .Pp{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+  }
+
+.Ft{
+  font-family: "figtree", sans-serif;
+}
+
+
+.und a{
+  position: relative;
+  color: inherit; /* Keeps the text color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s; /* Optional color transition on hover */
+}
+
+.und a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px; /* Adjusts underline position */
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: currentColor; /* Matches the text color */
+  transition: width 0.5s ease; /* Smooth transition for underline */
+}
+
+.und a:hover::after {
+  width: 100%; /* Expands underline to full width */
+}
+
+
+.art
+{
+  background-image: url('./assets/Art.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2 */
+
+
+#cont-1{
+  background: url('./assets/p1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#cont-2{
+  background: url('./assets/p2.webp');
+  background-size: cover;
+  background-position: center;
+}

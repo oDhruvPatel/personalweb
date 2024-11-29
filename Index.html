@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Patel</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="cursor-none">
+
+  <!-- Dot that follows the cursor -->
+  <div class="dot fixed top-0 left-0 w-4 h-4 border-[1px] border-gray-700 rounded-full pointer-events-none z-50 flex items-center justify-center">
+    <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+  </div>
+
+  <!-- Scroll down animation -->
+  <div
+    class="scrol-down absolute bottom-8 left-[50%] transform -translate-x-[50%] w-[10%] flex flex-col items-center space-y-4"
+    id="scroll-down"
+  >
+    <div class="rounded-full h-12 w-6 bg-gray-300 flex items-end justify-center overflow-hidden">
+      <div
+        id="inner-circle"
+        class="w-5 h-6 rounded-full bg-gray-600 m-1 transition-transform"
+      ></div>
+    </div>
+    <p class="text-sm font-normal uppercase text-gray-500 tracking-widest text-center">
+      scroll down
+    </p>
+  </div>
+
+  <!-- Navbar -->
+  <div class="w-full sticky top-0 backdrop-blur-md bg-white bg-opacity-40">
+    <div class="md:w-[70%] w-full h-[10vh] mx-auto flex items-center justify-between py-5 text-[#2b2b2b]">
+      <div class="w-[20%] font-extrabold text-2xl cursor-pointer">DP</div>
+      <div class="text-xl und lowercase tracking-wide Ft">
+        <a href="#" class="mr-8">Home</a>
+        <a href="#" class="mr-8">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="md:w-[70%] w-full h-[90vh] mx-auto flex justify-between items-center">
+    <div class="w-[50%] -mt-28">
+      <div class=" font-extrabold text-5xl text-[#2b2b2b] mb-7 Pp">
+        Hello there👋<br />I'm Dhruv Patel
+      </div>
+      <div class="  text-lg text-gray-600">
+        I'm a passionate <span class="">software developer</span> from Gujarat,
+        specializing in creating impactful web and software solutions. I craft
+        intuitive <span class="">frontends</span>, build robust
+        <span class="">backend</span>, and turn complex challenges into elegant
+        code.
+      </div>
+
+      <div class="mt-3 text-gray-600 text-lg Ft">
+        📧 me at
+        <span
+          class="text-[#2b2b2b] underline hover:text-indigo-700 cursor-pointer font-bold"
+          >dhruvptl273@gmail.com</span
+        >
+        -let's build something remarkable!
+      </div>
+    </div>
+    <div class="art container -mt-28 w-[42%] h-[400px] bg-gray-100 flex items-center justify-center">
+      <!-- Add your artwork or image here -->
+      <p class="text-gray-500 art"></p>
+    </div>
+  </div>
+
+  <!-- Selected works -->
+  <div class="w-full md:w-[70%] mx-auto h-full text-center mt-7 text-[#2b2b2b]">
+    <p class="text-sm font-normal uppercase text-gray-500 tracking-widest Ft">
+      Checkout my
+    </p>
+    <h2 class="text-4xl font-normal mt-2 Pp">Selected Works</h2>
+  </div>
+
+  <div class="mt-20 md:w-[70%] w-full mx-auto h-full flex flex-wrap gap-4">
+    
+    <div class="w-full md:w-[calc(50%-8px)] p-4 bg-gray-200">
+      <div class="h-[400px]" id="cont-1"></div>
+      <div class="mt-4   text-center">
+        <p class="text-xl text-left Pp">Language Learning Application</p>
+        <p class="text-left text-md mt-1 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio iure, </p>
+      </div>
+    </div>
+
+
+    <div class="w-full md:w-[calc(50%-8px)] p-4 bg-gray-200">
+      <div class="h-[400px]" id="cont-2"></div>
+      <div class="mt-2 text-center">
+        <p class="text-xl text-left Pp">Language Learning Application</p>
+        <p class="text-left text-md mt-3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio iure, </p>
+      </div>
+    </div>
+
+
+    <div class="w-full md:w-[calc(50%-8px)] p-4 bg-gray-200">
+      <div class="h-[400px]" id="cont-1"></div>
+      <div class="mt-2 text-center">
+        <p class="text-xl text-left Pp">Language Learning Application</p>
+        <p class="text-left text-md mt-3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio iure, </p>
+      </div>
+    </div>
+
+
+    <div class="w-full md:w-[calc(50%-8px)] p-4 bg-gray-200">
+      <div class="h-[400px]" id="cont-1"></div>
+      <div class="mt-2 text-center">
+        <p class="text-xl text-left Pp">Language Learning Application</p>
+        <p class="text-left text-md mt-3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio iure, </p>
+      </div>
+    </div>
+  
+    
+  
+  
+
+  <!-- GSAP Animation Script -->
+  <script>
+    const dot = document.querySelector(".dot");
+    const innerCircle = document.querySelector("#inner-circle");
+    const scrollDown = document.getElementById("scroll-down");
+
+    // Cursor-follow animation
+    document.addEventListener("mousemove", (event) => {
+      const { clientX: x, clientY: y } = event;
+
+      // Use GSAP to animate the dot to follow the cursor
+      gsap.to(dot, {
+        x: x - dot.offsetWidth / 2, // Center the dot to cursor
+        y: y - dot.offsetHeight / 2,
+        duration: 0 // Instant movement to cursor
+      });
+    });
+
+    // Scroll down animation
+    gsap.to(innerCircle, {
+      y: -20, // Moves the element up by 20px
+      repeat: -1, // Infinite repeat
+      yoyo: true, // Reverse the animation back to the starting point
+      duration: 0.5, // Duration of the animation
+      ease: "power1.inOut", // Smooth easing for better animation flow
+    });
+
+    // Hide scroll down on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // If the user has scrolled down
+        gsap.to(scrollDown, {
+          opacity: 0,  // Fade out the scroll down indicator
+          y: 20,  // Move it down a little
+          duration: 0.3,
+        });
+      } else {
+        gsap.to(scrollDown, {
+          opacity: 1,  // Fade it back in
+          y: 0,  // Reset its position
+          duration: 0.3,
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
